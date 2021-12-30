@@ -9,9 +9,9 @@ import retrofit2.http.POST
 interface APIInterface {
 
     @GET("/recipes/")
-    fun getRecipe() : Call<List<RecipeDetailsItem>>
+    fun getRecipe(): Call<List<RecipeDetailsItem>>
 
     @POST("/recipes/")
-    fun addRecipe(@Body userData:RecipeDetailsItem): Call<RecipeDetailsItem>
+    fun addRecipe(@Body userData: RecipeDetailsItem): Call<RecipeDetailsItem>
 
 }

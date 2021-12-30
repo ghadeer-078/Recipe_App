@@ -41,7 +41,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
     private fun init() {
         viewuserBtn = findViewById(R.id.viewBtn)
         addusersbtn = findViewById(R.id.addusserBtn)
@@ -52,30 +51,42 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-    private fun getInfo(){
+    private fun getInfo() {
 
         val title = editTextTitle.text.toString()
         val author = editTextAuthor.text.toString()
         val ingredients = editTextIngredients.text.toString()
         val instructions = editTextInstructions.text.toString()
 
-        apiInterface!!.addRecipe(RecipeDetailsItem(0,title,author,ingredients,instructions)).enqueue(object:
-            Callback<RecipeDetailsItem> {
-            override fun onResponse(
-                call: Call<RecipeDetailsItem>,
-                response: Response<RecipeDetailsItem>
-            ) {
-                Toast.makeText(applicationContext, "The User Has Been Added Successfully!!", Toast.LENGTH_SHORT).show()
-            }
+        apiInterface!!.addRecipe(RecipeDetailsItem(0, title, author, ingredients, instructions))
+            .enqueue(object :
+                Callback<RecipeDetailsItem> {
+                override fun onResponse(
+                    call: Call<RecipeDetailsItem>,
+                    response: Response<RecipeDetailsItem>
+                ) {
+                    Toast.makeText(
+                        applicationContext,
+                        "The User Has Been Added Successfully!!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
 
-            override fun onFailure(call: Call<RecipeDetailsItem>, t: Throwable) {
-                Toast.makeText(applicationContext, "Sorry,The User Has Not Been Added Successfully!!", Toast.LENGTH_SHORT).show()
-            }
-        })
+                override fun onFailure(call: Call<RecipeDetailsItem>, t: Throwable) {
+                    Toast.makeText(
+                        applicationContext,
+                        "Sorry,The User Has Not Been Added Successfully!!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            })
+
+        editTextTitle.text.clear()
+        editTextAuthor.text.clear()
+        editTextIngredients.text.clear()
+        editTextInstructions.text.clear()
+
     }
-
-
 
 
 }

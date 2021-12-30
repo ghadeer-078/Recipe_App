@@ -18,12 +18,14 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMain"
-        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addUsersbtn" />
+        app:layout_constraintTop_toBottomOf="@+id/addUsersbtn"
+        tools:listitem="@layout/item_row" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

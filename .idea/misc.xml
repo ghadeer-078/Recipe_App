@@ -6,10 +6,13 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/activity_main.xml" value="0.209375" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/activity_view_recipe.xml" value="0.209375" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/item_row.xml" value="0.209375" />
+        <entry key="..\:/Users/HUAWEI/StudioProjects/Recipe_App/app/src/main/res/drawable/bg.xml" value="0.31666666666666665" />
+        <entry key="..\:/Users/HUAWEI/StudioProjects/Recipe_App/app/src/main/res/layout/activity_view_recipe.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/HUAWEI/StudioProjects/Recipe_App/app/src/main/res/layout/item_row.xml" value="0.30052083333333335" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
